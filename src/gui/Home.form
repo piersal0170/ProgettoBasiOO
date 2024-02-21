@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.Home">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="5e1d1" binding="panelRicerca" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="3d292" class="javax.swing.JButton" binding="accediButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Accedi"/>
+            </properties>
+          </component>
+          <component id="41c4c" class="javax.swing.JButton" binding="registratiButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Registrati"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="72800" binding="panelAccount" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d7733" class="javax.swing.JLabel" binding="cercaPaginaLabel">
+            <constraints/>
+            <properties>
+              <text value="Cerca pagina"/>
+            </properties>
+          </component>
+          <component id="bdd45" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+          <component id="5725c" class="javax.swing.JButton" binding="okButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Ok"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="3ec46" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+        <constraints border-constraint="Center"/>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>

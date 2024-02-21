@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.Registrati">
+  <grid id="27dc6" binding="panel1" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="795" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="bcf3" binding="nomePanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e6fb0" class="javax.swing.JLabel" binding="nome">
+            <constraints/>
+            <properties>
+              <text value="Nome"/>
+            </properties>
+          </component>
+          <component id="ac5b" class="javax.swing.JTextField" binding="nomeField">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9923b" binding="cognomePanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2eb69" class="javax.swing.JLabel" binding="cognome">
+            <constraints/>
+            <properties>
+              <text value="Cognome"/>
+            </properties>
+          </component>
+          <component id="3041f" class="javax.swing.JTextField" binding="cognomeField">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="241e2" binding="ssnPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="ec399" class="javax.swing.JLabel" binding="ssn">
+            <constraints/>
+            <properties>
+              <text value="Codice Fiscale"/>
+            </properties>
+          </component>
+          <component id="7cc0a" class="javax.swing.JTextField" binding="ssnField">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="43058" binding="mailPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9349" class="javax.swing.JLabel" binding="mail">
+            <constraints/>
+            <properties>
+              <text value="Mail"/>
+            </properties>
+          </component>
+          <component id="36908" class="javax.swing.JTextField" binding="mailField">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9cbf0" binding="passwordPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="3fb54" class="javax.swing.JLabel" binding="password">
+            <constraints/>
+            <properties>
+              <text value="Password"/>
+            </properties>
+          </component>
+          <component id="1ed9e" class="javax.swing.JTextField" binding="passwordField">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="7879a" class="javax.swing.JButton" binding="OKButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="OK"/>
+        </properties>
+      </component>
+      <component id="76936" class="javax.swing.JButton" binding="homeButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Home"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.Accesso">
+  <grid id="27dc6" binding="panel1" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="43" y="21" width="460" height="403"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="76236" binding="ssnPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e4c34" class="javax.swing.JLabel" binding="ssn">
+            <constraints/>
+            <properties>
+              <text value="Codice Fiscale"/>
+            </properties>
+          </component>
+          <component id="1c693" class="javax.swing.JTextField" binding="ssnField">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="86876" binding="passwordPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9a817" class="javax.swing.JLabel" binding="password">
+            <constraints/>
+            <properties>
+              <text value="Password"/>
+            </properties>
+          </component>
+          <component id="e53bb" class="javax.swing.JTextField" binding="passwordField">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="84c10" class="javax.swing.JButton" binding="OKButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="OK"/>
+        </properties>
+      </component>
+      <component id="59128" class="javax.swing.JButton" binding="homeButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Home"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
