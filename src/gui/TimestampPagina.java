@@ -29,7 +29,8 @@ public class TimestampPagina {
         DefaultListModel modelloLista = new DefaultListModel();
         Map<String, Timestamp> versioni = controller.versioni;
         if (!versioni.isEmpty()) {
-            modelloLista.addAll(versioni.keySet());
+            TreeSet<String> versioniOrdinate = new TreeSet<>(versioni.keySet());
+            modelloLista.addAll(versioniOrdinate);
         } else {
             JOptionPane.showMessageDialog(frame, "errore");
         }

@@ -192,6 +192,7 @@ public class FraseDAOimpl implements FraseDAO {
             PreparedStatement versioniPaginaPS = connection.prepareStatement(
                     "SELECT dataoraapprovata FROM frase WHERE dataoraapprovata is not null AND id_pagina = " + id_pagina + " ");
             ResultSet rs = versioniPaginaPS.executeQuery();
+            versioni.put(" Versione iniziale", null);
             while(rs.next()){
                 Timestamp dataora = rs.getTimestamp("dataoraapprovata");
                 versioni.put(dataora.toString(), dataora);
@@ -208,8 +209,14 @@ public class FraseDAOimpl implements FraseDAO {
     public String storicoPagina(Timestamp timestamp, int id_pagina) throws Exception{
         String testo = null;
         try {
-            PreparedStatement storicoPaginaPS = connection.prepareStatement(
-                    "SELECT storico_pagina('" + timestamp + "'," + id_pagina + ")");
+            PreparedStatement storicoPaginaPS;
+            if(timestamp == null){
+                storicoPaginaPS = connection.prepareStatement(
+                        "SELECT storico_pagina(null, " + id_pagina + ")");
+            } else {
+                storicoPaginaPS =connection.prepareStatement(
+                        "SELECT storico_pagina('" + timestamp + "'," + id_pagina + ")");
+            }
             System.out.println("SQL: " + storicoPaginaPS.toString());
             ResultSet rs = storicoPaginaPS.executeQuery();
             if(rs.next()){
